@@ -92,6 +92,43 @@ function linkedList() {
         }
     };
 
+    //EXTRA CREDIT
+    const insertAt = (value, index, node = root) => {
+        if(index == 0) {
+            prepend(value);
+        } else if(index == 1) {
+            let oldNextNode = node.nextNode;
+            node.nextNode = Node(value);
+            node.nextNode.nextNode = oldNextNode;
+        } else if(node.nextNode == null) {
+            return;
+        } else {
+            index--;
+            insertAt(value, index, node.nextNode);
+        }
+    };
+
+    const removeAt = (index, node = root) => {
+        if(index == 0) {
+            if(root.nextNode == null) {
+                return;
+            } else {
+                root = root.nextNode;
+            }
+        } else if(index == 1) {
+            if(node.nextNode == null) {
+                return;
+            } else {
+                node.nextNode = node.nextNode.nextNode;
+            }
+        } else if(node.nextNode == null) {
+            return;
+        } else {
+            index--;
+            removeAt(value, index, node.nextNode);
+        }
+    };
+
     let root = Node();
 
     return {append, prepend, size, head, tail, at, pop, contains, find, toString};
