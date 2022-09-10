@@ -99,18 +99,19 @@ function linkedList() {
 }
 
 let nullLinkedList = linkedList();
-console.log(nullLinkedList.toString());
+console.log("nullLinkedList: " + nullLinkedList.toString());
 
 let singleValueListedList = linkedList();
 singleValueListedList.head().value = 1;
-console.log(singleValueListedList.toString());
+console.log("singleValueListList" + singleValueListedList.toString());
 
 let twoNodes = linkedList();
 twoNodes.head().value = 1;
 twoNodes.append(2);
-console.log(twoNodes.toString());
+console.log("twoNodes: " + twoNodes.toString());
 twoNodes.append(4);
 twoNodes.tail().value = 3;
-console.log(twoNodes.toString());
+console.log("twoNodes: " + twoNodes.toString());
 twoNodes.prepend(0);
-console.log(twoNodes.toString());
+console.log("twoNodes: " + twoNodes.toString());
+console.log("twoNode size: " + twoNodes.size());
