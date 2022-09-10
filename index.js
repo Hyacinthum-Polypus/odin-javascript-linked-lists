@@ -41,7 +41,7 @@ function linkedList() {
         }
     };
 
-    const at = (index, node = root) {
+    const at = (index, node = root) => {
         if(index == 0) {
             return node;
         } else if(node.nextNode == null) {
