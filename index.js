@@ -115,3 +115,6 @@ console.log("twoNodes: " + twoNodes.toString());
 twoNodes.prepend(0);
 console.log("twoNodes: " + twoNodes.toString());
 console.log("twoNode size: " + twoNodes.size());
+twoNodes.prepend(10);
+console.log("twoNodes: " + twoNodes.toString());
+console.log("twoNodes element 3: " + twoNodes.at(3).value);
