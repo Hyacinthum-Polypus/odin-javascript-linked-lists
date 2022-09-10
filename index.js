@@ -112,3 +112,5 @@ console.log(twoNodes.toString());
 twoNodes.append(4);
 twoNodes.tail().value = 3;
 console.log(twoNodes.toString());
+twoNodes.prepend(0);
+console.log(twoNodes.toString());
