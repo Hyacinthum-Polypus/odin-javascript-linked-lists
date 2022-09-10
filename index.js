@@ -53,9 +53,8 @@ function linkedList() {
     };
 
     const pop = (node = root) => {
-        if(node == root){
-            return;
-        } else if(node.nextNode.nextNode == null) {
+        if(node.nextNode.nextNode == null) {
+            if(node == root) return;
             node.nextNode = null;
         } else {
             pop(node.nextNode);
@@ -118,3 +117,5 @@ console.log("twoNode size: " + twoNodes.size());
 twoNodes.prepend(10);
 console.log("twoNodes: " + twoNodes.toString());
 console.log("twoNodes element 3: " + twoNodes.at(3).value);
+twoNodes.pop();
+console.log("twoNodes: " + twoNodes.toString());
