@@ -109,3 +109,6 @@ let twoNodes = linkedList();
 twoNodes.head().value = 1;
 twoNodes.append(2);
 console.log(twoNodes.toString());
+twoNodes.append(4);
+twoNodes.tail().value = 3;
+console.log(twoNodes.toString());
