@@ -125,7 +125,7 @@ function linkedList() {
             return;
         } else {
             index--;
-            removeAt(value, index, node.nextNode);
+            removeAt(index, node.nextNode);
         }
     };
 
@@ -162,4 +162,8 @@ console.log("twoNodes node value 1 is at element: " + twoNodes.find(1));
 twoNodes.insertAt(4,3);
 console.log("twoNodes: " + twoNodes.toString());
 twoNodes.insertAt("Hello World", 0);
+console.log("twoNodes: " + twoNodes.toString());
+twoNodes.removeAt(2);
+console.log("twoNodes: " + twoNodes.toString());
+twoNodes.removeAt(0);
 console.log("twoNodes: " + twoNodes.toString());
