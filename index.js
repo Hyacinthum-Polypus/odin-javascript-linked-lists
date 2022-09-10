@@ -121,3 +121,4 @@ twoNodes.pop();
 console.log("twoNodes: " + twoNodes.toString());
 console.log("Does twoNodes contain 1: " + twoNodes.contains(1));
 console.log("Does twoNodes contain 5: " + twoNodes.contains(5));
+console.log("twoNodes node value 1 is at element: " + twoNodes.find(1));
