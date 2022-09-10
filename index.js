@@ -62,7 +62,7 @@ function linkedList() {
     };
 
     const contains = (value, node = root) => {
-        if(node == value) {
+        if(node.value == value) {
             return true;
         } else if(node.nextNode == null) {
             return false;
@@ -119,3 +119,5 @@ console.log("twoNodes: " + twoNodes.toString());
 console.log("twoNodes element 3: " + twoNodes.at(3).value);
 twoNodes.pop();
 console.log("twoNodes: " + twoNodes.toString());
+console.log("Does twoNodes contain 1: " + twoNodes.contains(1));
+console.log("Does twoNodes contain 5: " + twoNodes.contains(5));
