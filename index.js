@@ -25,7 +25,7 @@ function linkedList() {
         if(node.nextNode == null) {
             return n;
         } else {
-            size(node.nextNode, n);
+            return size(node.nextNode, n);
         }
     };
 
@@ -37,7 +37,7 @@ function linkedList() {
         if(node.nextNode == null) {
             return node;
         } else {
-            tail(node.nextNode);
+            return tail(node.nextNode);
         }
     };
 
@@ -48,7 +48,7 @@ function linkedList() {
             return null;
         } else {
             index--;
-            at(index, node.nextNode);
+            return at(index, node.nextNode);
         }
     };
 
@@ -68,7 +68,7 @@ function linkedList() {
         } else if(node.nextNode == null) {
             return false;
         } else {
-            contains(value, node.nextNode);
+            return contains(value, node.nextNode);
         }
     };
 
@@ -79,7 +79,7 @@ function linkedList() {
             return null;
         } else {
             ++n;
-            find(value, n, node.nextNode);
+            return find(value, n, node.nextNode);
         }
     };
 
@@ -89,7 +89,7 @@ function linkedList() {
             str += "null";
             return str;
         } else {
-            toString(str, node.nextNode)
+            return toString(str, node.nextNode)
         }
     };
 
@@ -104,3 +104,8 @@ console.log(nullLinkedList.toString());
 let singleValueListedList = linkedList();
 singleValueListedList.head().value = 1;
 console.log(singleValueListedList.toString());
+
+let twoNodes = linkedList();
+twoNodes.head().value = 1;
+twoNodes.append(2);
+console.log(twoNodes.toString());
