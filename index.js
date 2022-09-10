@@ -98,6 +98,9 @@ function linkedList() {
     return {append, prepend, size, head, tail, at, pop, contains, find, toString};
 }
 
-let myLinkedList = linkedList();
+let nullLinkedList = linkedList();
+console.log(nullLinkedList.toString());
 
-console.log(myLinkedList.toString());
+let singleValueListedList = linkedList();
+singleValueListedList.head().value = 1;
+console.log(singleValueListedList.toString());
